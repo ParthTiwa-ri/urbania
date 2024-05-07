@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         background: "#F6F6F6",
+        accent: "#20AF8D",
       },
     },
   },

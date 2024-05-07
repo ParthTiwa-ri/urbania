@@ -28,7 +28,7 @@ function Categorycard({ category }: categoryProp) {
   return (
     <div
       key={category.name}
-      className=" h-38 w-32 shrink-0  bg-white shadow-lg  rounded-xl flex items-center flex-col"
+      className=" h-38 w-28 shrink-0  bg-white shadow-lg  rounded-xl flex items-center flex-col"
     >
       <div className="h-[80%]">
         <Image
