@@ -72,7 +72,7 @@ export default function page({ params }: { params: { tour: string } }) {
             optio temporibus?
           </p>
         </div>
-        <div className="buy-now backdrop-blur-md fixed bg-zinc-200/70 px-6 bottom-0 left-0  w-full h-24 flex items-center justify-between">
+        <div className="buy-now backdrop-blur-md fixed bg-zinc-200/70 px-6 bottom-0 left-0  w-full h-20 flex items-center justify-between">
           <div className="flex flex-col items-end">
             <p className="font-extrabold text-3xl">
               <span>&#8377;</span>750
