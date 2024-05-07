@@ -28,7 +28,7 @@ export default function page({ params }: { params: { tour: string } }) {
       </header>
       <section className=" p-6 bg-zinc-200 w-full h-[100%] rounded-[30px] rounded-b-none -mt-4 z-10 relative">
         <div className="w-16 absolute top-3 left-1/2 -translate-x-1/2 h-[6px] rounded bg-zinc-400"></div>
-        <div className="mt-3">
+        <div className="mt-1">
           <p className="text-4xl font-bold tracking-tight ">Char dham, India</p>
         </div>
         <div className="flex justify-between mt-3">
