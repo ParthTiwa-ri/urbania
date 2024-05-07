@@ -72,14 +72,14 @@ export default function page({ params }: { params: { tour: string } }) {
             optio temporibus?
           </p>
         </div>
-        <div className="buy-now backdrop-blur-sm fixed bg-zinc-200/60 px-6 bottom-0 left-0  w-full h-24 flex items-center justify-between">
+        <div className="buy-now backdrop-blur-md fixed bg-zinc-200/70 px-6 bottom-0 left-0  w-full h-24 flex items-center justify-between">
           <div className="flex flex-col items-end">
             <p className="font-extrabold text-3xl">
               <span>&#8377;</span>750
             </p>
             <p>/person</p>
           </div>
-          <button className="bg-accent flex gap-2  text-white px-14 py-4 rounded-full drop-shadow-3xl shadow-2xl text-nowrap">
+          <button className="bg-accent flex gap-2  text-white px-14 py-4 rounded-full drop-shadow-3xl shadow-2xl shadow-accent  text-nowrap">
             Book Now
             <FaArrowRightLong className="text-2xl font-extralight text-white-100" />
           </button>
