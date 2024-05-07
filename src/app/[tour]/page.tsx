@@ -79,7 +79,7 @@ export default function page({ params }: { params: { tour: string } }) {
             </p>
             <p>/person</p>
           </div>
-          <button className="bg-accent flex gap-2  text-white px-14 py-4 rounded-full drop-shadow-xl shadow-2xl text-nowrap">
+          <button className="bg-accent flex gap-2  text-white px-14 py-4 rounded-full drop-shadow-3xl shadow-2xl text-nowrap">
             Book Now
             <FaArrowRightLong className="text-2xl font-extralight text-white-100" />
           </button>
@@ -97,8 +97,8 @@ function Categorycard({ category }: categoryProp) {
       <div className="h-[80%]">
         <Image
           src={category.url}
-          width={200}
-          height={200}
+          width={96}
+          height={70}
           alt="categories image"
           className="h-full w-full rounded-xl p-2"
         ></Image>
