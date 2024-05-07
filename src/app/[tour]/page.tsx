@@ -15,7 +15,7 @@ export default function page({ params }: { params: { tour: string } }) {
   console.log(params.tour);
   return (
     <div className="bg-black max-h-screen relative">
-      <header className="relative">
+      <header className="relative -mt-14">
         <div className="">
           <Image
             src="/images/hero-3.png"
@@ -26,7 +26,7 @@ export default function page({ params }: { params: { tour: string } }) {
           ></Image>
         </div>
       </header>
-      <section className=" p-6 bg-zinc-200 w-full h-[100%] rounded-[30px] rounded-b-none -mt-6 z-10 relative">
+      <section className=" p-6 bg-zinc-200 w-full h-[100%] rounded-[30px] rounded-b-none -mt-4 z-10 relative">
         <div className="w-16 absolute top-3 left-1/2 -translate-x-1/2 h-[6px] rounded bg-zinc-400"></div>
         <div className="mt-3">
           <p className="text-4xl font-bold tracking-tight ">Char dham, India</p>
