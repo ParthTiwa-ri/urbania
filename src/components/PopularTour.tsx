@@ -1,5 +1,6 @@
 import { popularTour } from "@/data/tourdata";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -26,7 +27,11 @@ export default function PopularTour() {
 
 function PopularCard({ tour }: tourProp) {
   return (
-    <div key={tour.name} className="relative shadow-lg rounded-xl ">
+    <Link
+      href={tour.name}
+      key={tour.name}
+      className="relative shadow-lg rounded-xl "
+    >
       <div className="  relative rounded-xl flex-shrink-0 mt-4  h-48 w-40 ">
         <Image
           src={tour.url}
@@ -39,6 +44,6 @@ function PopularCard({ tour }: tourProp) {
       <p className="px-4  rounded-lg py-2 bottom-2 left-1 z-30 backdrop-blur-lg  bg-gray-100/80 absolute">
         {tour.name}
       </p>
-    </div>
+    </Link>
   );
 }
