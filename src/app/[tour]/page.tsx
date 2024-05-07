@@ -18,7 +18,7 @@ export default function page({ params }: { params: { tour: string } }) {
       <header className="relative -mt-14">
         <div className="">
           <Image
-            src="/images/hero-3.png"
+            src="/images/kedar.jpeg"
             width={500}
             height={267}
             alt="hero-force-image"
@@ -72,7 +72,7 @@ export default function page({ params }: { params: { tour: string } }) {
             optio temporibus?
           </p>
         </div>
-        <div className="buy-now backdrop-blur fixed bg-zinc-200/70 px-6 bottom-0 left-0  w-full h-20 flex items-center justify-between">
+        <div className="buy-now backdrop-blur fixed bg-zinc-200/70 px-6 bottom-0 left-0   w-full h-20 flex items-center justify-between">
           <div className="flex flex-col items-end">
             <p className="font-extrabold text-3xl">
               <span>&#8377;</span>750
@@ -83,6 +83,7 @@ export default function page({ params }: { params: { tour: string } }) {
             Book Now
             <FaArrowRightLong className="text-2xl font-extralight text-white-100" />
           </button>
+          {/* <div className="absolute w-full h-10 bg-transparent/30 blur-2xl left-0 bottom-20"></div> */}
         </div>
       </section>
     </div>
