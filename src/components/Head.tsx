@@ -4,13 +4,15 @@ import React from "react";
 export default function Head() {
   return (
     <header className="relative">
-      <Image
-        src="/images/hero-3.png"
-        width={500}
-        height={267}
-        alt="hero-force-image"
-        className="relative"
-      ></Image>
+      <div className="h-80">
+        <Image
+          src="/images/hero-3.png"
+          width={500}
+          height={267}
+          alt="hero-force-image"
+          className="relative h-full w-full object-cover"
+        ></Image>
+      </div>
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50"></div>
       <div className="absolute top-6 left-1/2  -translate-x-1/2">
         {/* <p className=" text-sm font-light">Good Morning ☀️</p> */}
