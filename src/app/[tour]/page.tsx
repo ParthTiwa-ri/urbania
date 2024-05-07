@@ -79,7 +79,7 @@ export default function page({ params }: { params: { tour: string } }) {
             </p>
             <p>/person</p>
           </div>
-          <button className="bg-accent flex gap-4 text-white px-20 py-4 rounded-full drop-shadow-xl shadow-2xl">
+          <button className="bg-accent flex gap-2 text-white px-14 py-4 rounded-full drop-shadow-xl shadow-2xl text-nowrap">
             Book Now
             <FaArrowRightLong className="text-2xl font-extralight text-white-100" />
           </button>
