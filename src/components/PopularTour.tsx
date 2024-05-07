@@ -30,7 +30,7 @@ function PopularCard({ tour }: tourProp) {
     <Link
       href={tour.name}
       key={tour.name}
-      className="relative shadow-lg rounded-xl "
+      className="relative shadow-lg drop-shadow-sm  rounded-xl "
     >
       <div className="  relative rounded-xl flex-shrink-0 mt-4  h-48 w-40 ">
         <Image

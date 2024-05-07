@@ -58,22 +58,31 @@ export default function page({ params }: { params: { tour: string } }) {
         </section>
         <div className="discription ">
           <h2 className="text-2xl font-semibold -mt-3">Description</h2>
-          <p className="mt-3 text-gray-500">
+          <p className="mt-3 text-gray-500 pb-24">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque sit
             ea corporis fugiat nisi numquam voluptatibus neque voluptas
             dignissimos facilis, vitae placeat aut aspernatur ab in fugit non
             magni vero. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Repudiandae, corporis. Iusto, consequatur inventore officiis ipsum
             iure alias consectetur enim eum quo saepe ipsam dicta. Quas rem
-            molestias dolorem pariatur nesciunt.
+            molestias dolorem pariatur nesciunt. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Aspernatur, tempora numquam! Maiores
+            necessitatibus reprehenderit delectus molestiae! Error odit qui
+            praesentium natus ducimus quia placeat harum, voluptatum numquam est
+            optio temporibus?
           </p>
         </div>
-        <div className="buy-now fixed bg-white px-6 bottom-0 left-0  w-full h-24 flex items-center justify-between">
+        <div className="buy-now fixed bg-zinc-200/90 px-6 bottom-0 left-0  w-full h-24 flex items-center justify-between">
           <div className="flex flex-col items-end">
-            <p className="font-extrabold text-3xl">$750</p>
+            <p className="font-extrabold text-3xl">
+              <span>&#8377;</span>750
+            </p>
             <p>/person</p>
           </div>
-          <button>Book Now</button>
+          <button className="bg-accent flex gap-4 text-white px-20 py-4 rounded-full drop-shadow-xl shadow-2xl">
+            Book Now
+            <FaArrowRightLong className="text-2xl font-extralight text-white-100" />
+          </button>
         </div>
       </section>
     </div>
