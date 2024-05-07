@@ -14,7 +14,7 @@ export const connect = async () => {
     return;
   }
   try {
-    mongoose.connect(db!, {
+    await mongoose.connect(db!, {
       dbName: "urbaina",
       bufferCommands: false,
     });
