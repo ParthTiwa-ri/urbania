@@ -45,7 +45,7 @@ export default function page({ params }: { params: { tour: string } }) {
             height={267}
             alt="hero-force-image"
             className="relative h-full w-full object-cover"
-            quality={50}
+            quality={30}
           ></Image>
         </div>
         <Link
@@ -124,6 +124,7 @@ function Categorycard({ category }: categoryProp) {
         height={80}
         alt="categories image"
         className="h-[80px] w-[112px] rounded-xl p-2"
+        quality={30}
       ></Image>
 
       <p className=" py-1 px-2 font-semibold ">{category.name}</p>

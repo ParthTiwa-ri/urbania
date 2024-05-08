@@ -11,7 +11,7 @@ export default function Head() {
           height={267}
           alt="hero-force-image"
           className="relative h-full w-full object-contain"
-          quality={50}
+          quality={40}
         ></Image>
       </div>
       {/* <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50"></div> */}

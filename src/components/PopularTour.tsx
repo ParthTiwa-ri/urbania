@@ -44,7 +44,7 @@ function PopularCard({ tour }: tourProp) {
             width={160}
             height={192}
             className="w-full h-full rounded-xl object-cover"
-            quality={50}
+            quality={30}
           ></Image>
         </div>
         <p className="px-4  rounded-lg py-2 bottom-2 left-1 z-30 backdrop-blur-lg  bg-gray-100/80 absolute">
