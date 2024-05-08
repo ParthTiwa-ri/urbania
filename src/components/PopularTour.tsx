@@ -29,12 +29,14 @@ export default async function PopularTour() {
 
 function PopularCard({ tour }: tourProp) {
   return (
-    <Link
-      href={tour.name}
+    <li
       key={tour.name}
       className="relative shadow-lg drop-shadow-sm  rounded-xl "
     >
-      <div className="  relative rounded-xl flex-shrink-0 mt-4  h-48 w-40 ">
+      <Link
+        href={tour.name}
+        className="  relative rounded-xl flex-shrink-0 mt-4  max-h-48 max-w-40 "
+      >
         <Image
           src={tour.url}
           alt="tourimage"
@@ -42,10 +44,10 @@ function PopularCard({ tour }: tourProp) {
           height={192}
           className="w-full h-full rounded-xl object-cover"
         ></Image>
-      </div>
+      </Link>
       <p className="px-4  rounded-lg py-2 bottom-2 left-1 z-30 backdrop-blur-lg  bg-gray-100/80 absolute">
         {tour.name}
       </p>
-    </Link>
+    </li>
   );
 }

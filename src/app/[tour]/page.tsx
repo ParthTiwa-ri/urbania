@@ -4,6 +4,7 @@ import axios from "axios";
 import Image from "next/image";
 import React from "react";
 import { BiRightArrow } from "react-icons/bi";
+import { CgKey } from "react-icons/cg";
 import { FaArrowRightLong, FaChevronRight } from "react-icons/fa6";
 import { GrMapLocation } from "react-icons/gr";
 import { IoLocationOutline } from "react-icons/io5";
@@ -12,11 +13,18 @@ type categoryProp = {
   category: { name: string; url: string };
 };
 
+type categoryType = {
+  name: string;
+  url: string;
+  _id: string;
+};
+
 export default async function page({ params }: { params: { tour: string } }) {
   // console.log(params.tour);
   const res = await axios.get("http://localhost:3000/api/tour/char-dham-yatra");
   const data = res.data;
   const { tourPlaces } = data;
+  console.log(tourPlaces);
 
   return (
     <div className="bg-black max-h-screen relative">
@@ -58,7 +66,7 @@ export default async function page({ params }: { params: { tour: string } }) {
             </div>
           </div>
           <ul className="flex space-x-4 pt-4 overflow-x-scroll no-scrollbar pb-10  ">
-            {tourPlaces.map((category: any) => (
+            {tourPlaces.map((category: categoryType) => (
               <Categorycard key={category.name} category={category} />
             ))}
           </ul>
@@ -88,7 +96,6 @@ export default async function page({ params }: { params: { tour: string } }) {
 function Categorycard({ category }: categoryProp) {
   return (
     <div
-      key={category.name}
       className=" w-24 shrink-0  bg-white shadow-lg  rounded-xl flex items-center flex-col"
     >
       <div className="h-[80%]">
