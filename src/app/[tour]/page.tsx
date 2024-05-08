@@ -4,10 +4,12 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { BiLeftArrow } from "react-icons/bi";
 
 import { FaArrowRightLong, FaChevronRight } from "react-icons/fa6";
 import { GrMapLocation } from "react-icons/gr";
 import { IoLocationOutline } from "react-icons/io5";
+import { SlArrowLeft } from "react-icons/sl";
 
 type categoryProp = {
   category: { name: string; url: string };
@@ -46,6 +48,12 @@ export default function page({ params }: { params: { tour: string } }) {
             quality={50}
           ></Image>
         </div>
+        <Link
+          href="/"
+          className="h-10 w-10 absolute top-20 flex items-center justify-center  left-5 rounded-full circle  bg-white"
+        >
+          <SlArrowLeft className="translate-x-[-0.3px] translate-y-[-0.2px]" />
+        </Link>
       </header>
       <section className=" p-6 bg-zinc-200 w-full h-[100%] rounded-[30px] rounded-b-none -mt-4 z-10 relative">
         <div className="w-16 absolute top-3 left-1/2 -translate-x-1/2 h-[6px] rounded bg-zinc-400"></div>
