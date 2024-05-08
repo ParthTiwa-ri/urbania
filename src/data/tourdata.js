@@ -35,3 +35,40 @@ export const Categories = [
     url: "/images/jaipur.jpeg",
   },
 ];
+
+const tour = [
+  {
+    name: "Char Dham Yatra",
+    slug: "char-dham-yatra",
+    detailName: "Char Dham Yatra, India",
+    detailURL: "https://example.com/char-dham-yatra",
+    rating: 4.5,
+    url: "/images/char-dham.avif",
+    images: [
+      "https://example.com/char-dham-image1.jpg",
+      "https://example.com/char-dham-image2.jpg",
+    ],
+    price: 1500,
+    description:
+      "Char Dham Yatra is a pilgrimage to the four sacred sites in Uttarakhand, India.",
+    category: "Pilgrimage",
+    tourPlaces: [
+      {
+        name: "Yamunotri",
+        url: "/images/yamnotri.jpeg",
+      },
+      {
+        name: "Gangotri",
+        url: "/images/gangotri.webp",
+      },
+      {
+        name: "Kedarnath",
+        url: "/images/Kedarnath.jpg",
+      },
+      {
+        name: "Badrinath",
+        url: "/images/amarnath.webp",
+      },
+    ],
+  },
+];

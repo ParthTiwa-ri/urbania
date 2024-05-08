@@ -1,4 +1,4 @@
-import { popularTour } from "@/data/tourdata";
+import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,8 +7,10 @@ import { FaArrowRightLong } from "react-icons/fa6";
 type tourProp = {
   tour: { name: string; url: string };
 };
-
-export default function PopularTour() {
+type Typetour = { name: string; url: string };
+export default async function PopularTour() {
+  const res = await axios.get("http://localhost:3000/api/tour/");
+  const popularTour = res.data;
   return (
     <section className="popular-tours">
       <div className="pt-6 flex justify-between items-center">
@@ -17,7 +19,7 @@ export default function PopularTour() {
       </div>
 
       <ul className="flex gap-3 overflow-x-scroll pb-9 no-scrollbar">
-        {popularTour.map((tour) => (
+        {popularTour.map((tour: Typetour) => (
           <PopularCard key={tour.name} tour={tour} />
         ))}
       </ul>

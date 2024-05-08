@@ -1,5 +1,6 @@
 import Head from "@/components/Head";
 import { Categories } from "@/data/tourdata";
+import axios from "axios";
 import Image from "next/image";
 import React from "react";
 import { BiRightArrow } from "react-icons/bi";
@@ -10,9 +11,12 @@ import { IoLocationOutline } from "react-icons/io5";
 type categoryProp = {
   category: { name: string; url: string };
 };
+export default async function page({ params }: { params: { tour: string } }) {
+  // console.log(params.tour);
+  const res = await axios.get("http://localhost:3000/api/tour/char-dham-yatra");
+  const data = res.data;
+  const { tourPlaces } = data;
 
-export default function page({ params }: { params: { tour: string } }) {
-  console.log(params.tour);
   return (
     <div className="bg-black max-h-screen relative">
       <header className="relative -mt-14">
@@ -51,7 +55,7 @@ export default function page({ params }: { params: { tour: string } }) {
             </div>
           </div>
           <ul className="flex space-x-4 pt-4 overflow-x-scroll no-scrollbar pb-10  ">
-            {Categories.map((category) => (
+            {tourPlaces.map((category) => (
               <Categorycard key={category.name} category={category} />
             ))}
           </ul>
