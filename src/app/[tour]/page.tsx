@@ -52,7 +52,7 @@ export default function page({ params }: { params: { tour: string } }) {
           href="/"
           className="h-10 w-10 absolute top-20 flex items-center justify-center  left-5 rounded-full circle  bg-white"
         >
-          <SlArrowLeft className="translate-x-[-0.3px] translate-y-[-0.2px]" />
+          <SlArrowLeft className="translate-x-[-1.2px] translate-y-[-0.5px]" />
         </Link>
       </header>
       <section className=" p-6 bg-zinc-200 w-full h-[100%] rounded-[30px] rounded-b-none -mt-4 z-10 relative">
