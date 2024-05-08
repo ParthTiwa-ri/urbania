@@ -4,7 +4,7 @@ import React from "react";
 export default function Head() {
   return (
     <header className="relative">
-      <div className="md:hidden">
+      <div className="md:h-[300px]">
         <Image
           src="/images/hero-3.png"
           width={500}
