@@ -18,7 +18,9 @@ type categoryType = {
 };
 
 export default async function page({ params }: { params: { tour: string } }) {
-  const res = await axios.get(`api/tour/char-dham-yatra`);
+  const res = await axios.get(
+    `${process.env.BASE_URL}api/tour/char-dham-yatra`
+  );
   const data = res.data;
   // const res = await fetch("api/tour/char-dham-yatra");
   // const data = await res.json();

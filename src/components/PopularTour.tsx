@@ -11,7 +11,8 @@ type Typetour = { name: string; url: string };
 export default async function PopularTour() {
   // const res = await fetch("api/tour");
   // const popularTour = await res.json();
-  const res = await axios.get("api/tour");
+  const res = await axios.get(`
+  ${process.env.BASE_URL}api/tour`);
   const popularTour = res.data;
   return (
     <section className="popular-tours">
