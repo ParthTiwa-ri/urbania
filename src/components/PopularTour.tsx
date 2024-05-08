@@ -1,19 +1,19 @@
+import { allTour } from "@/data/tourdata";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
 import { FaArrowRightLong } from "react-icons/fa6";
 
 type tourProp = {
-  tour: { name: string; url: string };
+  tour: { name: string; url: string; slug: string };
 };
-type Typetour = { name: string; url: string };
-export default async function PopularTour() {
+type Typetour = { name: string; url: string; slug: string };
+export default function PopularTour() {
   // const res = await fetch("api/tour");
   // const popularTour = await res.json();
-  const res = await axios.get(`
-  ${process.env.BASE_URL}api/tour`);
-  const popularTour = res.data;
+  const popularTour = allTour;
   return (
     <section className="popular-tours">
       <div className="pt-6 flex justify-between items-center">
@@ -36,7 +36,7 @@ function PopularCard({ tour }: tourProp) {
       key={tour.name}
       className="relative shadow-lg drop-shadow-sm  rounded-xl "
     >
-      <Link href="char-dham">
+      <Link href={tour.slug}>
         <div className="  relative rounded-xl flex-shrink-0 mt-4 h-48 w-40 ">
           <Image
             src={tour.url}

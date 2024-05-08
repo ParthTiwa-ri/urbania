@@ -1,5 +1,5 @@
 import Head from "@/components/Head";
-import { Categories } from "@/data/tourdata";
+import { Categories, allTour } from "@/data/tourdata";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,15 +24,14 @@ export async function generateStaticParams() {
     },
   ];
 }
-export default async function page({ params }: { params: { tour: string } }) {
-  const res = await axios.get(
-    `${process.env.BASE_URL}api/tour/char-dham-yatra`
-  );
-  const data = res.data;
-  // const res = await fetch("api/tour/char-dham-yatra");
-  // const data = await res.json();
+export default function page({ params }: { params: { tour: string } }) {
+  const data = allTour.find((tour) => tour.slug === params.tour);
+  if (!data) {
+    // Handle the case where no matching tour is found
+    // For example, you might want to return a loading state, an error message, or redirect the user
+    return <div>No tour found</div>;
+  }
   const { tourPlaces } = data;
-  console.log(tourPlaces);
 
   return (
     <div className="bg-black max-h-screen relative">

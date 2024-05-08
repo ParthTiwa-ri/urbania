@@ -1,22 +1,3 @@
-export const popularTour = [
-  {
-    name: "Char dham",
-    url: "/images/char-dham.avif",
-  },
-  {
-    name: "Amarnath",
-    url: "/images/amarnath.webp",
-  },
-  {
-    name: "Goa",
-    url: "/images/goa.avif",
-  },
-  {
-    name: "Shimla",
-    url: "/images/shimla.jpeg",
-  },
-];
-
 export const Categories = [
   {
     name: "Mountains",
@@ -36,10 +17,11 @@ export const Categories = [
   },
 ];
 
-const tour = [
+export const allTour = [
   {
     name: "Char Dham Yatra",
     slug: "char-dham-yatra",
+    locationName: "Maharashtra",
     detailName: "Char Dham Yatra, India",
     detailURL: "https://example.com/char-dham-yatra",
     rating: 4.5,

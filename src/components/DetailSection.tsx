@@ -1,8 +1,3 @@
-import Image from "next/image";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { IoIosNotifications } from "react-icons/io";
-import { popularTour } from "../data/tourdata";
-import { Categories } from "../data/tourdata";
 import PopularTour from "./PopularTour";
 import Category from "./Category";
 export default function DetailSection() {
