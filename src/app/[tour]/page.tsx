@@ -19,12 +19,6 @@ type categoryType = {
 
 export default async function page({ params }: { params: { tour: string } }) {
   // console.log(params.tour);
-  const res = await axios.get(
-    `${process.env.BASE_URL}/api/tour/char-dham-yatra`
-  );
-  const data = res.data;
-  const { tourPlaces } = data;
-  console.log(tourPlaces);
 
   return (
     <div className="bg-black max-h-screen relative">
