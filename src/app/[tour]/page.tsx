@@ -97,7 +97,7 @@ export default function page({ params }: { params: { tour: string } }) {
           <h2 className="text-2xl font-semibold -mt-3">Description</h2>
           <p className="mt-3 text-gray-500 pb-24">{data.description}</p>
         </div>
-        <div className="buy-now backdrop-blur fixed bg-zinc-200/70 px-6 bottom-0 left-0   w-full h-20 flex items-center justify-between">
+        <div className="buy-now backdrop-blur-sm fixed bg-zinc-200/70 px-6 bottom-0 left-0   w-full h-20 flex items-center justify-between">
           <div className="flex flex-col items-end">
             <p className="font-extrabold text-3xl">
               <span>&#8377;</span>
