@@ -94,6 +94,10 @@ export default function page({ params }: { params: { tour: string } }) {
           </ul>
         </section>
         <div className="discription ">
+          <h2 className="text-2xl font-semibold -mt-3">Tour Time</h2>
+          <p className="mt-3 text-gray-500 pb-7">{data.tourTime}</p>
+        </div>
+        <div className="discription ">
           <h2 className="text-2xl font-semibold -mt-3">Description</h2>
           <p className="mt-3 text-gray-500 pb-24">{data.description}</p>
         </div>
