@@ -22,6 +22,7 @@ export const allTour = [
     name: "Char Dham Yatra",
     slug: "char-dham-yatra",
     locationName: "Maharashtra",
+    map: "",
     detailName: "Char Dham Yatra, India",
     detailURL: "https://example.com/char-dham-yatra",
     rating: 4.5,
