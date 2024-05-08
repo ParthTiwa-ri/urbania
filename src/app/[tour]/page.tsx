@@ -19,9 +19,7 @@ type categoryType = {
 
 export default async function page({ params }: { params: { tour: string } }) {
   // console.log(params.tour);
-  const res = await axios.get(
-    `https://www.bookurbania.online/api/tour/char-dham-yatra`
-  );
+  const res = await axios.get(`api/tour/char-dham-yatra`);
   const data = res.data;
   const { tourPlaces } = data;
   console.log(tourPlaces);
