@@ -30,15 +30,14 @@ function Categorycard({ category }: categoryProp) {
       key={category.name}
       className=" h-38 w-28 shrink-0  bg-white shadow-lg drop-shadow-md rounded-xl flex items-center flex-col"
     >
-      <div className="h-[80%]">
-        <Image
-          src={category.url}
-          width={200}
-          height={200}
-          alt="categories image"
-          className="h-full w-full rounded-xl p-2"
-        ></Image>
-      </div>
+      <Image
+        src={category.url}
+        width={112}
+        height={80}
+        alt="categories image"
+        className="h-full w-full rounded-xl p-2"
+      ></Image>
+
       <p className=" py-1 font-semibold">{category.name}</p>
     </div>
   );

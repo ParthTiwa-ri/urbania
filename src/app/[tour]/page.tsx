@@ -107,15 +107,14 @@ export default function page({ params }: { params: { tour: string } }) {
 function Categorycard({ category }: categoryProp) {
   return (
     <div className=" w-24 shrink-0  bg-white shadow-lg  rounded-xl flex items-center flex-col">
-      <div className="h-[80%]">
-        <Image
-          src={category.url}
-          width={96}
-          height={70}
-          alt="categories image"
-          className="h-full w-full rounded-xl p-2"
-        ></Image>
-      </div>
+      <Image
+        src={category.url}
+        width={96}
+        height={80}
+        alt="categories image"
+        className="h-[80px] w-[112px] rounded-xl p-2"
+      ></Image>
+
       <p className=" py-1 font-semibold">{category.name}</p>
     </div>
   );
