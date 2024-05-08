@@ -86,40 +86,4 @@ export const allTour = [
       },
     ],
   },
-  {
-    name: "Char-sDham",
-    slug: "char-jdham",
-    locationName: "Maharashtra",
-    map: "https://www.google.com/maps/d/u/0/viewer?mid=1muPOhwVIraxXIQyfhD8zd6nRLIo&g_ep=CAISDTYuMTEzLjAuNTcwMjAYACDdYipRLDk0MjE4OTU2LDk0MjE4OTU4LDQ3MDcxNzA0LDQ3MDY5NTA4LDk0MjE4NjM1LDk0MjAzMDEzLDQ3MDg0MzA0LDk0MjA4NDU4LDk0MjA4NDQ3QgJJTg%3D%3D&g_st=ic&g_st=ic&ll=30.497852840690747%2C78.77870750000001&z=8",
-    detailName: "Char Dham Yatra, India",
-    detailURL: "https://example.com/char-dham-yatra",
-    rating: 4.5,
-    url: "/images/char-dham.avif",
-    images: [
-      "https://example.com/char-dham-image1.jpg",
-      "https://example.com/char-dham-image2.jpg",
-    ],
-    price: 1500,
-    description:
-      "Char Dham Yatra is a pilgrimage to the four sacred sites in Uttarakhand, India.",
-    category: "Pilgrimage",
-    tourPlaces: [
-      {
-        name: "Yamunotri",
-        url: "/images/yamnotri.jpeg",
-      },
-      {
-        name: "Gangotri",
-        url: "/images/gangotri.webp",
-      },
-      {
-        name: "Kedarnath",
-        url: "/images/Kedarnath.jpg",
-      },
-      {
-        name: "Badrinath",
-        url: "/images/amarnath.webp",
-      },
-    ],
-  },
 ];
