@@ -58,14 +58,16 @@ export default function page({ params }: { params: { tour: string } }) {
             <IoLocationOutline className="text-xl " />
             <p>{data.locationName}</p>
           </div>
-          <a
-            href={data.map}
-            target="_blank"
-            className="text-accent font-medium  flex gap-x-2 items-center"
-          >
-            <GrMapLocation className="text-xl" />
-            <p>Map Direction</p>
-          </a>
+          {data.map && (
+            <a
+              href={data.map}
+              target="_blank"
+              className="text-accent font-medium  flex gap-x-2 items-center"
+            >
+              <GrMapLocation className="text-xl" />
+              <p>Map Direction</p>
+            </a>
+          )}
         </div>
         <div className="w-full h-[2px] bg-zinc-400/30 mt-4"></div>
         <section className="Places mt-4">
