@@ -38,7 +38,7 @@ export default function page({ params }: { params: { tour: string } }) {
       <header className="relative -mt-14">
         <div className="h-[267px]">
           <Image
-            src="/images/kedar.jpeg"
+            src={data.detailURL}
             width={500}
             height={267}
             alt="hero-force-image"
@@ -106,7 +106,7 @@ export default function page({ params }: { params: { tour: string } }) {
 }
 function Categorycard({ category }: categoryProp) {
   return (
-    <div className=" w-24 shrink-0  bg-white shadow-lg  rounded-xl flex items-center flex-col">
+    <div className=" min-w-24 px-2 shrink-0  bg-white shadow-lg  rounded-xl flex items-center flex-col">
       <Image
         src={category.url}
         width={96}
@@ -115,7 +115,7 @@ function Categorycard({ category }: categoryProp) {
         className="h-[80px] w-[112px] rounded-xl p-2"
       ></Image>
 
-      <p className=" py-1 font-semibold">{category.name}</p>
+      <p className=" py-1 font-semibold ">{category.name}</p>
     </div>
   );
 }
