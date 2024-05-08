@@ -97,7 +97,7 @@ export default function page({ params }: { params: { tour: string } }) {
             </p>
             <p>/person</p>
           </div>
-          <button className="bg-accent flex gap-2  text-white px-14 py-4 rounded-full drop-shadow-3xl shadow-2xl shadow-accent  text-nowrap">
+          <button className="bg-accent flex gap-2  text-white px-8 py-4 rounded-full drop-shadow-3xl shadow-2xl shadow-accent  text-nowrap">
             <a href="tel:8126622930"> Book Now</a>
             <FaArrowRightLong className="text-2xl font-extralight text-white-100" />
           </button>
