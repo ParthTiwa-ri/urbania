@@ -49,7 +49,7 @@ export default function page({ params }: { params: { tour: string } }) {
       <section className=" p-6 bg-zinc-200 w-full h-[100%] rounded-[30px] rounded-b-none -mt-4 z-10 relative">
         <div className="w-16 absolute top-3 left-1/2 -translate-x-1/2 h-[6px] rounded bg-zinc-400"></div>
         <div className="mt-1">
-          <p className="text-4xl font-bold tracking-tight ">
+          <p className="text-3xl font-bold tracking-tight ">
             {data.detailName}
           </p>
         </div>
@@ -106,7 +106,7 @@ export default function page({ params }: { params: { tour: string } }) {
 }
 function Categorycard({ category }: categoryProp) {
   return (
-    <div className=" min-w-24 px-2 shrink-0  bg-white shadow-lg  rounded-xl flex items-center flex-col">
+    <div className=" min-w-24  shrink-0  bg-white shadow-lg  rounded-xl flex items-center flex-col">
       <Image
         src={category.url}
         width={96}
@@ -115,7 +115,7 @@ function Categorycard({ category }: categoryProp) {
         className="h-[80px] w-[112px] rounded-xl p-2"
       ></Image>
 
-      <p className=" py-1 font-semibold ">{category.name}</p>
+      <p className=" py-1 px-2 font-semibold ">{category.name}</p>
     </div>
   );
 }
