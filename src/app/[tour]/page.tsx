@@ -43,6 +43,7 @@ export default function page({ params }: { params: { tour: string } }) {
             height={267}
             alt="hero-force-image"
             className="relative h-full w-full object-cover"
+            quality={50}
           ></Image>
         </div>
       </header>

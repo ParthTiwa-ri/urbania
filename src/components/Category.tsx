@@ -36,6 +36,7 @@ function Categorycard({ category }: categoryProp) {
         height={80}
         alt="categories image"
         className="h-full w-full rounded-xl p-2"
+        quality={50}
       ></Image>
 
       <p className=" py-1 font-semibold">{category.name}</p>
