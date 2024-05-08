@@ -11,6 +11,7 @@ import { IoLocationOutline } from "react-icons/io5";
 type categoryProp = {
   category: { name: string; url: string };
 };
+
 export default async function page({ params }: { params: { tour: string } }) {
   // console.log(params.tour);
   const res = await axios.get("http://localhost:3000/api/tour/char-dham-yatra");
@@ -57,7 +58,7 @@ export default async function page({ params }: { params: { tour: string } }) {
             </div>
           </div>
           <ul className="flex space-x-4 pt-4 overflow-x-scroll no-scrollbar pb-10  ">
-            {tourPlaces.map((category) => (
+            {tourPlaces.map((category: any) => (
               <Categorycard key={category.name} category={category} />
             ))}
           </ul>
