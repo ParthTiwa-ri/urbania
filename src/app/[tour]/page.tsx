@@ -36,7 +36,7 @@ export default function page({ params }: { params: { tour: string } }) {
   return (
     <div className="bg-black max-h-screen relative">
       <header className="relative -mt-14">
-        <div className="">
+        <div className="h-[267px]">
           <Image
             src="/images/kedar.jpeg"
             width={500}
@@ -95,7 +95,7 @@ export default function page({ params }: { params: { tour: string } }) {
             <p>/person</p>
           </div>
           <button className="bg-accent flex gap-2  text-white px-14 py-4 rounded-full drop-shadow-3xl shadow-2xl shadow-accent  text-nowrap">
-            Book Now
+            <a href="tel:8126622930"> Book Now</a>
             <FaArrowRightLong className="text-2xl font-extralight text-white-100" />
           </button>
           {/* <div className="absolute w-full h-10 bg-transparent/30 blur-2xl left-0 bottom-20"></div> */}
