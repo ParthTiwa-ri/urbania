@@ -3,6 +3,7 @@ import mongoose, { models } from "mongoose";
 const tourSchema = new mongoose.Schema({
   name: { type: String, required: true },
   slug: { type: String, require: true },
+  map: { type: String },
   locationName: { type: String, required: true },
   detailName: { type: String, required: true },
   detailURL: { type: String, required: true },

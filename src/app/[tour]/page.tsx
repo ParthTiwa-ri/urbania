@@ -2,6 +2,7 @@ import Head from "@/components/Head";
 import { Categories } from "@/data/tourdata";
 import axios from "axios";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import { FaArrowRightLong, FaChevronRight } from "react-icons/fa6";
@@ -52,10 +53,14 @@ export default async function page({ params }: { params: { tour: string } }) {
             <IoLocationOutline className="text-xl " />
             <p>{data.locationName}</p>
           </div>
-          <div className="text-accent font-medium  flex gap-x-2 items-center">
+          <a
+            href={data.map}
+            target="_blank"
+            className="text-accent font-medium  flex gap-x-2 items-center"
+          >
             <GrMapLocation className="text-xl" />
             <p>Map Direction</p>
-          </div>
+          </a>
         </div>
         <div className="w-full h-[2px] bg-zinc-400/30 mt-4"></div>
         <section className="Places mt-4">
