@@ -9,7 +9,7 @@ type tourProp = {
 };
 type Typetour = { name: string; url: string };
 export default async function PopularTour() {
-  const res = await axios.get("http://localhost:3000/api/tour/");
+  const res = await axios.get("/api/tour/");
   const popularTour = res.data;
   return (
     <section className="popular-tours">
