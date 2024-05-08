@@ -17,7 +17,13 @@ type categoryType = {
   name: string;
   url: string;
 };
-
+export async function generateStaticParams() {
+  return [
+    {
+      tour: "char-dham",
+    },
+  ];
+}
 export default async function page({ params }: { params: { tour: string } }) {
   const res = await axios.get(
     `${process.env.BASE_URL}api/tour/char-dham-yatra`
