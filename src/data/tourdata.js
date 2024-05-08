@@ -19,8 +19,8 @@ export const Categories = [
 
 export const allTour = [
   {
-    name: "Char Dham Yatra",
-    slug: "char-dham-yatra",
+    name: "Char Dham",
+    slug: "char-dham",
     locationName: "Maharashtra",
     map: "",
     detailName: "Char Dham Yatra, India",
