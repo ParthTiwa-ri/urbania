@@ -33,12 +33,14 @@ export default async function page({ params }: { params: { tour: string } }) {
       <section className=" p-6 bg-zinc-200 w-full h-[100%] rounded-[30px] rounded-b-none -mt-4 z-10 relative">
         <div className="w-16 absolute top-3 left-1/2 -translate-x-1/2 h-[6px] rounded bg-zinc-400"></div>
         <div className="mt-1">
-          <p className="text-4xl font-bold tracking-tight ">Char dham, India</p>
+          <p className="text-4xl font-bold tracking-tight ">
+            {data.detailName}
+          </p>
         </div>
         <div className="flex justify-between mt-3">
           <div className="flex gap-x-2 items-center text-zinc-600/70">
             <IoLocationOutline className="text-xl " />
-            <p>Maharashtra</p>
+            <p>{data.locationName}</p>
           </div>
           <div className="text-accent font-medium  flex gap-x-2 items-center">
             <GrMapLocation className="text-xl" />
@@ -62,24 +64,13 @@ export default async function page({ params }: { params: { tour: string } }) {
         </section>
         <div className="discription ">
           <h2 className="text-2xl font-semibold -mt-3">Description</h2>
-          <p className="mt-3 text-gray-500 pb-24">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque sit
-            ea corporis fugiat nisi numquam voluptatibus neque voluptas
-            dignissimos facilis, vitae placeat aut aspernatur ab in fugit non
-            magni vero. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repudiandae, corporis. Iusto, consequatur inventore officiis ipsum
-            iure alias consectetur enim eum quo saepe ipsam dicta. Quas rem
-            molestias dolorem pariatur nesciunt. Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Aspernatur, tempora numquam! Maiores
-            necessitatibus reprehenderit delectus molestiae! Error odit qui
-            praesentium natus ducimus quia placeat harum, voluptatum numquam est
-            optio temporibus?
-          </p>
+          <p className="mt-3 text-gray-500 pb-24">{data.description}</p>
         </div>
         <div className="buy-now backdrop-blur fixed bg-zinc-200/70 px-6 bottom-0 left-0   w-full h-20 flex items-center justify-between">
           <div className="flex flex-col items-end">
             <p className="font-extrabold text-3xl">
-              <span>&#8377;</span>750
+              <span>&#8377;</span>
+              {data.price}
             </p>
             <p>/person</p>
           </div>
