@@ -3,7 +3,7 @@ import Head from "@/components/Head";
 import axios from "axios";
 
 export default async function Home() {
-  const res = await axios.get(`${process.env.BASE_URL}/api/tour/`);
+  const res = await axios.get(`https://www.bookurbania.online/api/tour/`);
   const data = res.data;
 
   console.log(data[0]);
