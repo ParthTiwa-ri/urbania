@@ -32,7 +32,7 @@ export const allTour = [
       "https://example.com/char-dham-image1.jpg",
       "https://example.com/char-dham-image2.jpg",
     ],
-    price: 1500,
+    price: 3500,
     description:
       "Char Dham Yatra is a pilgrimage to the four sacred sites in Uttarakhand, India.",
     category: "Pilgrimage",
